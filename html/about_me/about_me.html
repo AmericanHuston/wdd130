@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<style>
+    div {
+        margin-bottom: 40px;
+    }
+</style>
+<body style="background-color: #212121; color: white; font-family: Arial, Helvetica, sans-serif;">
+    <main>
+        <head>
+            <title>About Me</title>
+        </head>
+        <div>
+            <h2>About Me:</h2>
+        </div>
+        <div id="intro">
+            <img src="../../images/noah.jpg" alt="">
+            <p style="width: 60%; margin: auto; font-size: 16px;">
+                Heyo, I'm Noah Sederstrom. I was born and raised in SLC, Utah.
+                I'm currently a student practicing C++ (a little, too busy), Java (a lot, for FTC), Python (some, for college), JS (a lot, for my site),
+                 HTML (a lot, for my site), CSS (a little, I've got a contributer to help with this), and Lua (a little, too busy).
+                Out of all of these, C++ has been my favorite, with Python and Lua tied as a close seconds.
+                My site is a news website (mainly satirical) about my debate league.
+            </p>
+        </div>
+        <div id="hobbies" style="display: flex;">
+            <div style="float: left; width: 50%;">
+                <h2>Hobbies:</h2>
+                <ul>
+                    <li><button id="programming" onclick="showInfoHobby('Programming')">Programing</button></li>
+                    <li><button id="gaming" onclick="showInfoHobby('Gaming')">Gaming</button></li>
+                    <li><button id="biking" onclick="showInfoHobby('Biking')">Biking</button></li>
+                </ul>
+            </div>
+            <div style="float: left; width: 50%;">
+                <p id="more-info-hobbies">Click the buttons to see more info!</p>
+            </div>
+        </div>
+        <div id="projects" style="display: flex;">
+            <div style="float: left; width: 50%;">
+                <h2>Projects</h2>
+                <ul>
+                    <li><button id="mods" onclick="showInfoProjects('Mods')">Luanti Mods</button></li>
+                    <li><button id="website" onclick="showInfoProjects('Website')">Debate Website</button></li>
+                    <li><button id="games" onclick="showInfoProjects('Games')">Debate Website (Games)</button></li>
+                    <li><button id="ftc" onclick="showInfoProjects('FTC')">FTC (Various)</button></li>
+                    <li><button id="engine" onclick="showInfoProjects('Engine')">Pneumatic Engine</button></li>
+                    <li><button id="hosting" onclick="showInfoProjects('Hosting')">Server Hosting</button></li>
+                </ul>
+            </div>
+            <div style="float: left; width: 50%;">
+                <p id="more-info-projects">Click the buttons to see more info!</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function showInfoHobby(hobby){
+        const target = document.getElementById("more-info-hobbies");
+        if (hobby == "Programming"){
+            target.textContent = "I've liked programing for a long time. I started when I was ~13, with batch. Later on, a friend introduced me to a game called Minetest (now Luanti). That's where I learned about C++ and Lua.";
+            var button = document.getElementById("programming");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (hobby == "Gaming"){
+            target.textContent = "Some of my favorite games to play are TOTK, Luanti, and Stardew Valley. Luanti is the least known out of all these games, but it is an awesome open source game.";
+            var button = document.getElementById("gaming");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (hobby == "Biking"){
+            target.textContent = "I used to bike a lot more, but now I don't as much. Mainly because I got a motorcycle, which has all the advantages, but basically none of the work. I biked 70 miles in one day last year, and that's my limit so far.";
+            var button = document.getElementById("biking");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        }
+    }
+
+    function showInfoProjects(project){
+        const target = document.getElementById("more-info-projects");
+        if (project == "Mods"){
+            target.textContent = "I've made a few mods in Luanti. My favorite mod that I've made has been a clans mod, which had various features including a scoring and ranking system. I also finished the modding tutorial book by Rubenwardy, a maintainer for Luanti.";
+            var button = document.getElementById("mods");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (project == "Website"){
+            target.textContent = "My main project for the last few weeks has been a satirical debate website, which allows other debate students to post news articles. I review them, and then approve them to the site.";
+            var button = document.getElementById("website");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (project == "Games"){
+            target.textContent = "One thing that I'm still working on adding to the debate website is games. They're still a work in progress, so none of them are live on the website right now.";
+            var button = document.getElementById("games");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (project == "FTC"){
+            target.textContent = "I've been the lead programmer for 2 years now with the team Chaos². It's been fantastic getting to learn Java, especially in a competative way.";
+            var button = document.getElementById("ftc");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (project == "Engine"){
+            target.textContent = "Having seen a lot of pneumatic engines on youtube, I figured it'd be pretty easy to get one to work. Right now I'm on my 50-something-th itteration, and it still doesn't run. We're getting there though.";
+            var button = document.getElementById("engine");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        } else if (project == "Hosting"){
+            target.textContent = "I got lucky enough to aquire a retired enterprise server, so I've been using that alongside my RPi5 to host Luanti servers, the debate website, as well as all the other maintenence sites related to the debate website.";
+            var button = document.getElementById("hosting");
+            if (button.textContent.search("✅") == -1){
+                button.textContent = button.textContent + "✅";
+            }
+        }
+    }
+</script>
