@@ -33,6 +33,27 @@ Fonts are separated by a & */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#background {
+    height: 725px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
 body {
     max-width: 960px;
     margin: 0 auto;
@@ -140,6 +161,7 @@ nav a {
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
+    text-align: center;
 }
 
 nav a:link,
