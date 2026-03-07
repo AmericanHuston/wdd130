@@ -405,3 +405,15 @@ nav a:hover {
         margin-top: 25px;
     }
 }
+
+/* The other site is below */
+
+#river-info {
+    text-align: center;
+    padding: 0px 15%;
+}
+#river-info img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
