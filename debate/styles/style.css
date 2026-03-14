@@ -30,6 +30,7 @@
 /* Header and other always-in-use stuff */
 body {
     margin: 0;
+    color: var(--headline-color-on-white);
 }
 
 h1 {
@@ -47,7 +48,7 @@ a {
 header {
     width: 100%;
     display: flex;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     align-items: center;
 }
 
@@ -74,7 +75,7 @@ footer div a {
 
 header div a :visited,
 footer div a :visited {
-    color: var(--accent1-color);
+    color: white;
     text-decoration: none;
     padding: 20px;
     min-width: 120px;
@@ -83,12 +84,7 @@ footer div a :visited {
 
 header div :hover,
 footer .footer-link :hover {
-    color: var(--accent1-color);
-    text-decoration: none;
-    padding: 20px;
-    min-width: 120px;
-    font-size: 25px;
-    background-color: #396E94;
+    color: white;
 }
 
 #join-us {
@@ -110,6 +106,7 @@ footer .social img {
 
 footer p {
     font-size: 1.2em;
+    color: var(--accent1-color);
 }
 
 footer p a:hover {
@@ -123,7 +120,8 @@ footer p a:hover {
 }
 
 #hero-content,
-#about-us {
+#about-us,
+#what-we-do {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,14 +129,44 @@ footer p a:hover {
 
 .center-h1 {
     text-align: center;
+    color: var(--headline-color-on-white);
+}
+
+#big-join {
+    text-decoration: none;
+    text-align: center;
+    font-size: 60px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+#big-join a, #big-join a :visited {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+#big-join :hover, #big-join a :hover {
+    text-decoration: none;
+    text-align: center;
+    font-size: 60px;
+    background-color: var(--headline-color-on-white);
+    color: var(--accent1-color)
 }
 
 #hero-content img,
-#about-us img {
+#about-us img,
+#what-we-do img {
     width: 300px;
 }
 
 #hero-content div,
-#about-us div {
+#about-us div,
+#what-we-do div {
     padding: 10px;
+}
+
+/* Event Page */
+#event-page img {
+    width: 100%;
+    height: 500px;
 }
