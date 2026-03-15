@@ -196,3 +196,56 @@ footer p a:hover {
     padding: 20px;
     margin: 30px;
 }
+
+/* Join Page */
+#contain-image {
+    position: relative;
+    text-align: center;
+    color: #656256;
+}
+
+#contain-image img {
+    width: 100%;
+}
+
+#centered-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-size: 100px;
+    transform: translate(-50%, -30%);
+}
+
+#right-text-box {
+    position: absolute;
+    bottom: 200px;
+    right: 15px;
+    background-color: white;
+    color: var(--headline-color-on-white);
+    font-family: var(--paragraph-font);
+    font-size: 25px;
+    border: solid black 2px;
+}
+
+#why-join {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#qr-code {
+    width: 200px;
+    padding-left: 50px;
+}
+
+#how-join {
+    font-size: 30px;
+    margin: 40px;
+}
+
+#how-we-know {
+    font-size: 25px;
+    text-align: center;
+}
